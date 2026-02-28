@@ -1,0 +1,186 @@
+{
+    "text": "Inventory of Slaves Stock &c on the Estate of the\nLate Col. Richard Barnes in Washington County on the 15th May 1804\nRs Names age Names age Rs\nDead \" Wilson . . . . 1 . . . . 78 \" Peter . . . . 45 . . 10\n\" Ben . . . . . . 2 . . . . 67 \" Jack . . . . 46 . 9\n\" Ned . . . . . . 3 . . . . 66 \" Jack (of J) 47 8\n\" Gilley . . . . . 4 . . . . 59 \" Dick . . . . 48 . 8\n\" Billy (Carpenter) 5 58 \" Isaac . . . . 49 . 8\n\" Peter (Smith) 6 . 50 \" Ben . . . . . 50 . 8 Papers\n\" Charles . . . . 7 . 47 \" Rial . . . . . 51 . 8 Papers\n\" Douglas . . . . 8 . 45 \" Jack . . . . . 52 . 8 Papers",
+    "entities": [
+        {
+            "entity": "Col. Richard Barnes",
+            "label": "PERSON",
+            "evidence_pointer": [
+                55,
+                74
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Washington County",
+            "label": "PLACE",
+            "evidence_pointer": [
+                78,
+                95
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "15th May 1804",
+            "label": "DATE",
+            "evidence_pointer": [
+                103,
+                116
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Estate of the Late Col. Richard Barnes",
+            "label": "OWNERSHIP",
+            "evidence_pointer": [
+                36,
+                74
+            ],
+            "confidence": 0.95
+        },
+        {
+            "entity": "Wilson",
+            "label": "PERSON",
+            "evidence_pointer": [
+                150,
+                156
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Peter",
+            "label": "PERSON",
+            "evidence_pointer": [
+                180,
+                185
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Ben",
+            "label": "PERSON",
+            "evidence_pointer": [
+                204,
+                207
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Jack",
+            "label": "PERSON",
+            "evidence_pointer": [
+                235,
+                239
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Ned",
+            "label": "PERSON",
+            "evidence_pointer": [
+                257,
+                260
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Jack (of J)",
+            "label": "PERSON",
+            "evidence_pointer": [
+                288,
+                299
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Gilley",
+            "label": "PERSON",
+            "evidence_pointer": [
+                306,
+                312
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Dick",
+            "label": "PERSON",
+            "evidence_pointer": [
+                337,
+                341
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Billy (Carpenter)",
+            "label": "PERSON",
+            "evidence_pointer": [
+                359,
+                376
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Isaac",
+            "label": "PERSON",
+            "evidence_pointer": [
+                382,
+                387
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Peter (Smith)",
+            "label": "PERSON",
+            "evidence_pointer": [
+                407,
+                420
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Ben",
+            "label": "PERSON",
+            "evidence_pointer": [
+                428,
+                431
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Charles",
+            "label": "PERSON",
+            "evidence_pointer": [
+                460,
+                467
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Rial",
+            "label": "PERSON",
+            "evidence_pointer": [
+                483,
+                487
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Douglas",
+            "label": "PERSON",
+            "evidence_pointer": [
+                516,
+                523
+            ],
+            "confidence": 1.0
+        },
+        {
+            "entity": "Jack",
+            "label": "PERSON",
+            "evidence_pointer": [
+                539,
+                543
+            ],
+            "confidence": 1.0
+        }
+    ],
+    "events": []
+}

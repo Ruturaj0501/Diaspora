@@ -1,0 +1,26 @@
+
+  {
+  "places": {
+    "Charleston, South Carolina": [
+      "Charleston",
+      "Chas. Dist.",
+      "Charleston Dist.",
+      "Chas, SC"
+    ],
+    "New Orleans, Louisiana": [
+      "N.O.",
+      "New Orleans",
+      "Orleans Parish"
+    ],
+    "Savannah, Georgia": [
+      "Savannah",
+      "Savh",
+      "Chatham County"
+    ],
+    "Delhi, India": [
+      "Delhi",
+      "New Delhi",
+      "Dilli"
+    ]
+  }
+}
