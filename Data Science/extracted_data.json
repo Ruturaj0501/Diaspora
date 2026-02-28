@@ -1,0 +1,27 @@
+{
+    "DocumentText": "MOvE",
+    "LayoutBlocks": [
+        {
+            "text": "MOvE",
+            "coordinates": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    213,
+                    0
+                ],
+                [
+                    213,
+                    48
+                ],
+                [
+                    0,
+                    48
+                ]
+            ],
+            "confidence": 0.4268
+        }
+    ]
+}
