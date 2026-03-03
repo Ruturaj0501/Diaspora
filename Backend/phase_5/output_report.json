@@ -1,0 +1,20 @@
+{
+    "timestamp": "2026-03-04T04:27:28.740891",
+    "question": "Isaac",
+    "narrative_summary": "Narrative Summary:\nIsaac was born in 1832 at Williams Plantation, VA, as recorded in [1]. He was 28 years old, with a black complexion, and possessed carpentry skills [1]. Isaac's health was sound, and he had a wife named Mary and three children [1].",
+    "footnotes": [
+        {
+            "evidence_id": 1,
+            "text": "Isaac\n\nb. 1832\n\nWilliams Plantation, VA\n\nOwner: William Carter\n\nAge: 28\nColor: Black.\nSkills: Carpenter.\nHealth: Sound\nRemarks: Wife Mary,\n3 children.",
+            "doc_id": "doc_1",
+            "page": 1,
+            "coordinates": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 150,
+                "y2": 100
+            },
+            "confidence": 0.95
+        }
+    ]
+}
