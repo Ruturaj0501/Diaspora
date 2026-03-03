@@ -1,4 +1,6 @@
-from fastapi import FastAPI, HTTPException
+import os
+import shutil
+from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks
 from pydantic import BaseModel
 from typing import List, Dict
 import json
@@ -6,6 +8,9 @@ import json
 from Phase4.models import GraphNode, EdgeStatus
 from Phase4.database import HybridDatabaseManager
 from Phase4.ranker import HybridCandidateRanker
+
+
+from pipeline import process_document_end_to_end
 
 app = FastAPI(title="DIRP Hybrid Graph API", version="1.0")
 
@@ -42,7 +47,6 @@ def run_resolution():
     """
     new_edges_count = 0
     
-    
     query = """
     MATCH (a:Person), (b:Person)
     WHERE a.node_id < b.node_id AND (
@@ -59,14 +63,11 @@ def run_resolution():
             node_a_data = dict(record["a"])
             node_b_data = dict(record["b"])
             
-           
             node_a_data["embedding"] = get_node_embedding(node_a_data["node_id"])
             node_b_data["embedding"] = get_node_embedding(node_b_data["node_id"])
             
-           
             edge = ranker.evaluate_pair(node_a_data, node_b_data)
             
-           
             if edge.status != EdgeStatus.REJECTED:
                 db.write_hypothesis_edge(edge.model_dump())
                 new_edges_count += 1
@@ -84,7 +85,6 @@ def get_review_queue():
     """
     queue = []
     
-    
     query = """
     MATCH (a:Person)-[r:POTENTIAL_MATCH {status: 'PENDING_REVIEW'}]->(b:Person)
     RETURN a, r, b
@@ -97,7 +97,6 @@ def get_review_queue():
             source_id = record["a"]["node_id"]
             target_id = record["b"]["node_id"]
             
-           
             cursor.execute("SELECT evidence FROM evidence_vault WHERE node_id IN (?, ?)", (source_id, target_id))
             evidence_rows = cursor.fetchall()
             
@@ -128,3 +127,32 @@ def submit_decision(edge_id: str, payload: ReviewDecision):
         session.run(query, edge_id=edge_id, status=payload.decision.upper(), reviewer_id=payload.reviewer_id)
         
     return {"message": f"Edge {edge_id} updated in Neo4j."}
+
+# -----------------------------
+# 4. MASTER PIPELINE ENDPOINT
+# -----------------------------
+@app.post("/api/v1/pipeline/upload", summary="Upload Image & Run Full Pipeline")
+async def upload_and_process_document(
+    background_tasks: BackgroundTasks, 
+    file: UploadFile = File(...)
+):
+    """
+    Receives an image from the UI, saves it, and triggers the full Phase 1->4 pipeline 
+    in the background so the UI doesn't freeze waiting for the LLMs to finish.
+    """
+   
+    upload_dir = "uploads"
+    os.makedirs(upload_dir, exist_ok=True)
+    
+    file_path = os.path.join(upload_dir, file.filename)
+    
+   
+    with open(file_path, "wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+    background_tasks.add_task(process_document_end_to_end, file_path)
+    
+    return {
+        "status": "processing",
+        "message": f"File '{file.filename}' received. Pipeline running in the background.",
+        "file_path": file_path
+    }
