@@ -1,94 +1,78 @@
 import json
-from PIL import Image
-from pydantic import BaseModel, Field
-from google import genai
-from google.genai import types
+import os
+import base64
+from mistralai import Mistral
 from dotenv import load_dotenv
+
 load_dotenv()
 
-
-class LayoutBlock(BaseModel):
-    text: str = Field(description="The transcribed text of the row, paragraph, or block.")
-    box_2d: list[int] = Field(description="Bounding box [ymin, xmin, ymax, xmax] normalized to 1000.")
-
-class DocumentExtraction(BaseModel):
-    DocumentText: str = Field(description="The full continuous transcription of the document.")
-    LayoutBlocks: list[LayoutBlock]
-
-
 def extract_and_save_data(image_path, output_json="Phase1/extracted_data.json"):
-    print("[INFO] Initializing Gemini client...")
-    client = genai.Client()
+    print("[INFO] Initializing Mistral AI client...")
+    api_key = os.getenv("MISTRAL_API_KEY")
+    if not api_key:
+        raise ValueError("MISTRAL_API_KEY not found in environment variables.")
+        
+    client = Mistral(api_key=api_key)
 
     print(f"[INFO] Processing image: {image_path}")
-    try:
-        img = Image.open(image_path)
-        img_width, img_height = img.size
-    except Exception as e:
-        raise ValueError(f"Could not open image. Ensure the path is correct: {e}")
+    if not os.path.exists(image_path):
+        raise ValueError(f"Could not find image at path: {image_path}")
 
-    prompt = """
-    Transcribe this historical document accurately. 
-    1. Provide the full transcription in DocumentText.
-    2. Break the document down into logical LayoutBlocks (rows, lines, or paragraphs). 
-    3. For each block, provide the text and the bounding box in [ymin, xmin, ymax, xmax] format scaled to 1000.
-    """
+    # Encode the image to base64 for the Mistral API
+    with open(image_path, "rb") as image_file:
+        base64_image = base64.b64encode(image_file.read()).decode('utf-8')
 
-    print("[INFO] Sending image to Gemini Flash (this may take a few seconds)...")
-    response = client.models.generate_content(
-        model='gemini-flash-latest', 
-        contents=[img, prompt],
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            response_schema=DocumentExtraction,
-            temperature=0.1, 
-        ),
+    print("[INFO] Sending image to Mistral OCR (mistral-ocr-latest)...")
+    
+    response = client.ocr.process(
+        model="mistral-ocr-latest",
+        document={
+            "type": "image_url",
+            # Assuming a .jpg input based on your previous Try2.jpg file
+            "image_url": f"data:image/jpeg;base64,{base64_image}"
+        }
     )
 
-    raw_data = json.loads(response.text)
-    document_text = raw_data.get("DocumentText", "")
     layout_blocks = []
+    full_text = ""
 
-    print("\n--- Parsing Gemini OCR Results ---")
-    for block in raw_data.get("LayoutBlocks", []):
-        text = block["text"]
+    print("\n--- Parsing Mistral OCR Results ---")
+    
+    # Mistral returns data page by page as raw Markdown
+    for page in response.pages:
+        markdown_text = page.markdown
+        full_text += markdown_text + "\n"
         
-        ymin, xmin, ymax, xmax = block["box_2d"]
+        # Because Mistral doesn't give text bounding boxes, we split by double newlines 
+        # to simulate "paragraphs" and hardcode a dummy bounding box so Phase 2 doesn't crash.
+        paragraphs = markdown_text.split("\n\n")
         
-        px_xmin = int((xmin / 1000.0) * img_width)
-        px_xmax = int((xmax / 1000.0) * img_width)
-        px_ymin = int((ymin / 1000.0) * img_height)
-        px_ymax = int((ymax / 1000.0) * img_height)
-        
-        clean_bbox = [
-            [px_xmin, px_ymin],
-            [px_xmax, px_ymin],
-            [px_xmax, px_ymax],
-            [px_xmin, px_ymax]
-        ]
-        
-        layout_blocks.append({
-            "text": text,
-            "coordinates": clean_bbox,
-            "confidence": "N/A" 
-        })
-        print(f"Extracted: '{text}'")
+        for para in paragraphs:
+            para = para.strip()
+            if para:
+                layout_blocks.append({
+                    "text": para,
+                    "coordinates": [[0,0], [0,0], [0,0], [0,0]], # DUMMY BOXES
+                    "confidence": 1.0 
+                })
+                print(f"Extracted: '{para[:60]}...'")
 
     final_output = {
-        "DocumentText": document_text,
+        "DocumentText": full_text.strip(),
         "LayoutBlocks": layout_blocks
     }
     
+    os.makedirs(os.path.dirname(output_json), exist_ok=True)
     with open(output_json, "w", encoding="utf-8") as f:
         json.dump(final_output, f, indent=4)
         
     print(f"\n[SUCCESS] Extracted {len(layout_blocks)} text blocks.")
+    print(f"[WARNING] Bounding boxes are mocked because Mistral OCR outputs pure Markdown.")
     print(f"[SUCCESS] Data successfully saved to {output_json}")
         
     return final_output
 
 if __name__ == "__main__":
-    
     image_file = "C:\\Users\\Ruturaj\\Downloads\\Try2.jpg"
     
     try:
