@@ -1,18 +1,19 @@
 import json
 from pathlib import Path
 from datetime import datetime
-from langchain_ollama import OllamaLLM
+from langchain_community.llms import Ollama  # Updated import for standard LangChain
 
 PHASE2_PATH = Path("Phase2/phase2_output.json")
 OUTPUT_DIR = Path("phase_5")
 OUTPUT_DIR.mkdir(exist_ok=True)
 OUTPUT_FILE = OUTPUT_DIR / "output_report.json"
 
-llm = OllamaLLM(model="llama3", temperature=0)
+# Initialize local Llama 3
+llm = Ollama(model="llama3", temperature=0.1)
 
 def load_records():
     if not PHASE2_PATH.exists():
-        print("Phase2 output file not found.")
+        print("[ERROR] Phase2 output file not found.")
         return []
 
     with open(PHASE2_PATH, "r", encoding="utf-8") as f:
@@ -50,77 +51,66 @@ def build_context(results):
     structured_evidence = []
 
     for idx, r in enumerate(results, 1):
-        evidence = r.get("evidence_pointer", {})
-        bbox = evidence.get("bbox", [])
-
-        x1 = bbox[0] if len(bbox) == 4 else None
-        y1 = bbox[1] if len(bbox) == 4 else None
-        x2 = bbox[2] if len(bbox) == 4 else None
-        y2 = bbox[3] if len(bbox) == 4 else None
-
-        max_conf = max(
-            [e.get("confidence", 0) for e in r.get("entities", [])],
-            default=0
-        )
+        text = r.get("text", "")
+        entities = r.get("entities", [])
+        
+        # Format the entities and their pointers correctly based on Phase 2 schema
+        entity_strings = []
+        for e in entities:
+            ent_text = e.get("entity", "Unknown")
+            label = e.get("label", "Unknown")
+            pointers = e.get("evidence_pointer", [0, 0])
+            conf = e.get("confidence", 0)
+            entity_strings.append(f"- {ent_text} ({label}) | Chars: {pointers[0]} to {pointers[1]} | Conf: {conf}")
+            
+        entities_formatted = "\n".join(entity_strings)
 
         block = f"""
 Evidence [{idx}]
-Text: {r.get("text")}
-Document ID: {evidence.get("doc_id")}
-Page: {evidence.get("page")}
-Pixel Coordinates: x1={x1}, y1={y1}, x2={x2}, y2={y2}
-Confidence: {max_conf}
+Source Text: {text}
+Extracted Entities (Pointers):
+{entities_formatted}
 """
         context_blocks.append(block)
 
         structured_evidence.append({
             "evidence_id": idx,
-            "text": r.get("text"),
-            "doc_id": evidence.get("doc_id"),
-            "page": evidence.get("page"),
-            "coordinates": {
-                "x1": x1,
-                "y1": y1,
-                "x2": x2,
-                "y2": y2
-            },
-            "confidence": max_conf
+            "text": text,
+            "entities": entities
         })
 
     return "\n".join(context_blocks), structured_evidence
 
 def generate_report(question, context):
     prompt = f"""
-You are a STRICT historical research copilot.
+    You are a STRICT historical research copilot for the DIRP architecture.
 
-RULES:
-- Use ONLY the evidence provided.
-- Do NOT invent document IDs or page numbers.
-- Every factual statement MUST cite like [1], [2].
-- Do NOT add extra commentary.
+    RULES:
+    - Use ONLY the evidence provided below. If the answer is not there, state "No evidence found."
+    - Every factual statement MUST be cited inline like [1], [2] pointing to the Evidence ID.
+    - Do NOT invent document IDs, dates, or names.
 
-QUESTION:
-{question}
+    QUESTION:
+    {question}
 
-EVIDENCE:
-{context}
+    EVIDENCE:
+    {context}
 
-OUTPUT FORMAT EXACTLY:
+    OUTPUT FORMAT EXACTLY:
 
-Narrative Summary:
-(write answer with inline citations like [1])
+    Narrative Summary:
+    (Write your grounded answer here with inline citations like [1])
 
-Footnotes:
-[1] Document ID: ...
-     Page: ...
-     Pixel Coordinates: x1=..., y1=..., x2=..., y2=...
-     Confidence: ...
-"""
+    Footnotes:
+    [1] (List the entities and character pointers used to make this claim)
+
+    Next Best Actions:
+    (Analyze the evidence for missing historical gaps—like missing dates, locations, or ownership transfers. Suggest 2 specific record types the researcher should look for next to fill these gaps).
+    """
 
     return llm.invoke(prompt)
 
 def save_output(question, narrative, evidence_list):
-
     output_data = {
         "timestamp": datetime.now().isoformat(),
         "question": question,
@@ -131,7 +121,7 @@ def save_output(question, narrative, evidence_list):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=4)
 
-    print(f"\nOutput saved to: {OUTPUT_FILE}")
+    print(f"\n[SUCCESS] Output saved to: {OUTPUT_FILE}")
 
 def copilot():
     print("=== DIRP Research Copilot (Phase 5 - Grounded Mode) ===")
@@ -143,7 +133,7 @@ def copilot():
         return
 
     while True:
-        question = input("\nAsk a historical question (or type exit): ")
+        question = input("\nAsk a historical question (or type 'exit'): ")
 
         if question.lower() == "exit":
             print("Exiting Copilot.")
@@ -152,18 +142,21 @@ def copilot():
         results = retrieve(question, records)
 
         if not results:
-            print("No high-confidence evidence found.")
+            print("No high-confidence evidence found. Try a different query.")
             continue
 
         context, structured_evidence = build_context(results)
-
+        
+        print("\n[INFO] Generating report via local Llama 3...")
         narrative = generate_report(question, context)
 
-        print("\n--- Grounded Report ---\n")
+        print("\n" + "="*50)
+        print(" GROUNDED REPORT ")
+        print("="*50)
         print(narrative)
+        print("="*50)
 
         save_output(question, narrative, structured_evidence)
-
 
 if __name__ == "__main__":
     copilot()
