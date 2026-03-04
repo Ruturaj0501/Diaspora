@@ -1,15 +1,17 @@
 import json
 from pathlib import Path
 from datetime import datetime
-from langchain_community.llms import Ollama  # Updated import for standard LangChain
+
+
+from langchain_ollama import OllamaLLM  
 
 PHASE2_PATH = Path("Phase2/phase2_output.json")
 OUTPUT_DIR = Path("phase_5")
 OUTPUT_DIR.mkdir(exist_ok=True)
 OUTPUT_FILE = OUTPUT_DIR / "output_report.json"
 
-# Initialize local Llama 3
-llm = Ollama(model="llama3", temperature=0.1)
+
+llm = OllamaLLM(model="llama3", temperature=0.1)
 
 def load_records():
     if not PHASE2_PATH.exists():
@@ -54,7 +56,7 @@ def build_context(results):
         text = r.get("text", "")
         entities = r.get("entities", [])
         
-        # Format the entities and their pointers correctly based on Phase 2 schema
+       
         entity_strings = []
         for e in entities:
             ent_text = e.get("entity", "Unknown")
