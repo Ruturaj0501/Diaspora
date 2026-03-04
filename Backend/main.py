@@ -12,6 +12,9 @@ from Phase4.ranker import HybridCandidateRanker
 
 from pipeline import process_document_end_to_end
 
+
+from Phase5.copilot import load_records, retrieve, build_context, generate_report, save_output
+
 app = FastAPI(title="DIRP Hybrid Graph API", version="1.0")
 
 db = HybridDatabaseManager()
@@ -140,15 +143,13 @@ async def upload_and_process_document(
     Receives an image from the UI, saves it, and triggers the full Phase 1->4 pipeline 
     in the background so the UI doesn't freeze waiting for the LLMs to finish.
     """
-   
     upload_dir = "uploads"
     os.makedirs(upload_dir, exist_ok=True)
-    
     file_path = os.path.join(upload_dir, file.filename)
     
-   
     with open(file_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
+        
     background_tasks.add_task(process_document_end_to_end, file_path)
     
     return {
@@ -156,3 +157,49 @@ async def upload_and_process_document(
         "message": f"File '{file.filename}' received. Pipeline running in the background.",
         "file_path": file_path
     }
+
+# -----------------------------
+# 5. THE RESEARCH COPILOT ENDPOINT
+# -----------------------------
+class CopilotQuery(BaseModel):
+    question: str
+
+@app.post("/api/v1/copilot/ask", summary="Ask the DIRP Research Copilot")
+def ask_copilot(payload: CopilotQuery):
+    """
+    Takes a question from the UI, searches the extracted documents, 
+    and uses local Llama 3 to generate a strictly grounded historical report.
+    """
+    records = load_records()
+    
+    if not records:
+        raise HTTPException(status_code=404, detail="No extracted records found. Run the extraction pipeline first.")
+        
+
+    results = retrieve(payload.question, records)
+    
+    if not results:
+        return {
+            "question": payload.question,
+            "report": "No high-confidence evidence found in the current records for this query.",
+            "evidence_used": []
+        }
+        
+    
+    context, structured_evidence = build_context(results)
+    
+    try:
+       
+        narrative = generate_report(payload.question, context)
+        
+       
+        save_output(payload.question, narrative, structured_evidence)
+        
+        return {
+            "question": payload.question,
+            "report": narrative,
+            "evidence_used": structured_evidence
+        }
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Llama 3 Generation failed: {str(e)}")
