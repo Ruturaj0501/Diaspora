@@ -42,6 +42,7 @@ def retrieve(query, records, min_confidence=0.5):
                 default=0
             )
 
+           
             if max_conf >= min_confidence:
                 ranked.append((score, max_conf, r))
 
@@ -55,6 +56,7 @@ def build_context(results):
     for idx, r in enumerate(results, 1):
         text = r.get("text", "")
         entities = r.get("entities", [])
+        events = r.get("events", [])
         
        
         entity_strings = []
@@ -65,20 +67,37 @@ def build_context(results):
             conf = e.get("confidence", 0)
             entity_strings.append(f"- {ent_text} ({label}) | Chars: {pointers[0]} to {pointers[1]} | Conf: {conf}")
             
-        entities_formatted = "\n".join(entity_strings)
+        entities_formatted = "\n".join(entity_strings) if entity_strings else "No entities extracted."
 
+        
+        event_strings = []
+        for evt in events:
+            evt_type = evt.get("event_type", "Unknown")
+            trigger = evt.get("trigger_word", "Unknown")
+            pointers = evt.get("evidence_pointer", [0, 0])
+            event_strings.append(f"- Event: {evt_type} | Trigger Word: '{trigger}' | Chars: {pointers[0]} to {pointers[1]}")
+            
+        events_formatted = "\n".join(event_strings) if event_strings else "No structured events extracted."
+
+       
         block = f"""
 Evidence [{idx}]
 Source Text: {text}
-Extracted Entities (Pointers):
+
+Extracted Entities:
 {entities_formatted}
+
+Extracted Events (Relationships/Transfers):
+{events_formatted}
 """
         context_blocks.append(block)
 
+        
         structured_evidence.append({
             "evidence_id": idx,
             "text": text,
-            "entities": entities
+            "entities": entities,
+            "events": events 
         })
 
     return "\n".join(context_blocks), structured_evidence
@@ -91,6 +110,7 @@ def generate_report(question, context):
     - Use ONLY the evidence provided below. If the answer is not there, state "No evidence found."
     - Every factual statement MUST be cited inline like [1], [2] pointing to the Evidence ID.
     - Do NOT invent document IDs, dates, or names.
+    - Pay special attention to "Extracted Events" to answer questions about relationships or transfers of ownership.
 
     QUESTION:
     {question}
@@ -104,7 +124,7 @@ def generate_report(question, context):
     (Write your grounded answer here with inline citations like [1])
 
     Footnotes:
-    [1] (List the entities and character pointers used to make this claim)
+    [1] (List the entities, events, and character pointers used to make this claim)
 
     Next Best Actions:
     (Analyze the evidence for missing historical gaps—like missing dates, locations, or ownership transfers. Suggest 2 specific record types the researcher should look for next to fill these gaps).
@@ -162,4 +182,3 @@ def copilot():
 
 if __name__ == "__main__":
     copilot()
-
