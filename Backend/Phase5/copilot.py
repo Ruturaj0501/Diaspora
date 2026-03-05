@@ -6,7 +6,7 @@ from datetime import datetime
 from langchain_ollama import OllamaLLM  
 
 PHASE2_PATH = Path("Phase2/phase2_output.json")
-OUTPUT_DIR = Path("phase_5")
+OUTPUT_DIR = Path("Phase5")
 OUTPUT_DIR.mkdir(exist_ok=True)
 OUTPUT_FILE = OUTPUT_DIR / "output_report.json"
 
@@ -162,3 +162,4 @@ def copilot():
 
 if __name__ == "__main__":
     copilot()
+
