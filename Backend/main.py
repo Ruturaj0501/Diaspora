@@ -1,55 +1,54 @@
 import os
 import shutil
-from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks
+import json
+from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks, Depends
 from pydantic import BaseModel
 from typing import List, Dict
-import json
 
 from Phase4.models import GraphNode, EdgeStatus
 from Phase4.database import HybridDatabaseManager
 from Phase4.ranker import HybridCandidateRanker
 
-
 from pipeline import process_document_end_to_end
-
-
 from Phase5.copilot import load_records, retrieve, build_context, generate_report, save_output
 
-app = FastAPI(title="DIRP Hybrid Graph API", version="1.0")
+from Phase6.governance import require_role, log_audit_event, ModelRegistry, check_consent_status
+
+app = FastAPI(title="DIRP Hybrid Graph API (Secured)", version="1.0")
 
 db = HybridDatabaseManager()
 ranker = HybridCandidateRanker(review_threshold=0.70)
 
 # -----------------------------
-# 1. DATA INGESTION
+# 1. DATA INGESTION (ADMIN ONLY)
 # -----------------------------
 @app.post("/api/v1/graph/ingest", summary="Ingest Nodes to Hybrid Storage")
-def ingest_nodes(nodes: List[GraphNode]):
-    """Splits incoming data: Heavy evidence to SQLite, relationships to Neo4j."""
+def ingest_nodes(
+    nodes: List[GraphNode],
+    user: dict = Depends(require_role(["ADMIN"])) # Strict RBAC
+):
+    # Audit Log the action
+    log_audit_event(user["user_id"], "INGEST_NODES", "HybridDatabase", {"count": len(nodes)})
+    
     for node in nodes:
         db.ingest_node(node.model_dump())
-    return {"status": "success", "message": f"Ingested {len(nodes)} records into Neo4j + SQLite."}
+        
+    return {"status": "success", "message": f"Ingested {len(nodes)} records."}
 
 # -----------------------------
-# 2. THE AI RESOLUTION ENGINE
+# 2. THE AI RESOLUTION ENGINE (ADMIN ONLY)
 # -----------------------------
 def get_node_embedding(node_id: str) -> list:
-    """Helper: Fetches the heavy 384-dimensional vector from the SQLite vault."""
     cursor = db.sqlite_conn.cursor()
     cursor.execute("SELECT embedding FROM evidence_vault WHERE node_id = ?", (node_id,))
     row = cursor.fetchone()
     return json.loads(row[0]) if row and row[0] else []
 
 @app.post("/api/v1/graph/resolve", summary="Run Neo4j Blocking & ML Ranking")
-def run_resolution():
-    """
-    The Core Pipeline:
-    1. Neo4j finds overlapping candidates (Blocking).
-    2. SQLite provides the embeddings (ML Scoring).
-    3. Neo4j stores the Hypothesis Edges.
-    """
-    new_edges_count = 0
+def run_resolution(user: dict = Depends(require_role(["ADMIN"]))):
+    log_audit_event(user["user_id"], "RUN_RESOLUTION", "Neo4j/SQLite")
     
+    new_edges_count = 0
     query = """
     MATCH (a:Person), (b:Person)
     WHERE a.node_id < b.node_id AND (
@@ -61,7 +60,6 @@ def run_resolution():
     """
     with db.neo4j_driver.session() as session:
         result = session.run(query)
-        
         for record in result:
             node_a_data = dict(record["a"])
             node_b_data = dict(record["b"])
@@ -78,14 +76,11 @@ def run_resolution():
     return {"message": "Resolution complete.", "hypotheses_generated": new_edges_count}
 
 # -----------------------------
-# 3. THE REVIEWER UI ENDPOINTS
+# 3. THE REVIEWER UI ENDPOINTS (RESEARCHER & ADMIN)
 # -----------------------------
 @app.get("/api/v1/review/queue", summary="Fetch UI Queue (Joined Data)")
-def get_review_queue():
-    """
-    Pulls the relationships from Neo4j and joins them with the 
-    bounding box evidence from SQLite so the UI can render everything.
-    """
+def get_review_queue(user: dict = Depends(require_role(["ADMIN", "RESEARCHER"]))):
+    log_audit_event(user["user_id"], "FETCH_REVIEW_QUEUE", "Neo4j")
     queue = []
     
     query = """
@@ -99,6 +94,10 @@ def get_review_queue():
         for record in result:
             source_id = record["a"]["node_id"]
             target_id = record["b"]["node_id"]
+            
+            # PHASE 6: Consent check before displaying node data
+            check_consent_status(source_id)
+            check_consent_status(target_id)
             
             cursor.execute("SELECT evidence FROM evidence_vault WHERE node_id IN (?, ?)", (source_id, target_id))
             evidence_rows = cursor.fetchall()
@@ -114,20 +113,24 @@ def get_review_queue():
 
 class ReviewDecision(BaseModel):
     decision: str  
-    reviewer_id: str
 
 @app.post("/api/v1/review/decision/{edge_id}", summary="Submit Human Decision")
-def submit_decision(edge_id: str, payload: ReviewDecision):
-    """Updates the final decision directly in Neo4j."""
+def submit_decision(
+    edge_id: str, 
+    payload: ReviewDecision,
+    user: dict = Depends(require_role(["ADMIN", "RESEARCHER"]))
+):
     if payload.decision.upper() not in ["APPROVE", "REJECT"]:
         raise HTTPException(status_code=400, detail="Must be APPROVE or REJECT.")
+        
+    log_audit_event(user["user_id"], f"SUBMIT_DECISION_{payload.decision.upper()}", f"Edge:{edge_id}")
         
     query = """
     MATCH ()-[r:POTENTIAL_MATCH {edge_id: $edge_id}]->()
     SET r.status = $status, r.reviewed_by = $reviewer_id
     """
     with db.neo4j_driver.session() as session:
-        session.run(query, edge_id=edge_id, status=payload.decision.upper(), reviewer_id=payload.reviewer_id)
+        session.run(query, edge_id=edge_id, status=payload.decision.upper(), reviewer_id=user["user_id"])
         
     return {"message": f"Edge {edge_id} updated in Neo4j."}
 
@@ -137,12 +140,11 @@ def submit_decision(edge_id: str, payload: ReviewDecision):
 @app.post("/api/v1/pipeline/upload", summary="Upload Image & Run Full Pipeline")
 async def upload_and_process_document(
     background_tasks: BackgroundTasks, 
-    file: UploadFile = File(...)
+    file: UploadFile = File(...),
+    user: dict = Depends(require_role(["ADMIN", "RESEARCHER"]))
 ):
-    """
-    Receives an image from the UI, saves it, and triggers the full Phase 1->4 pipeline 
-    in the background so the UI doesn't freeze waiting for the LLMs to finish.
-    """
+    log_audit_event(user["user_id"], "UPLOAD_DOCUMENT", f"File:{file.filename}")
+    
     upload_dir = "uploads"
     os.makedirs(upload_dir, exist_ok=True)
     file_path = os.path.join(upload_dir, file.filename)
@@ -154,8 +156,8 @@ async def upload_and_process_document(
     
     return {
         "status": "processing",
-        "message": f"File '{file.filename}' received. Pipeline running in the background.",
-        "file_path": file_path
+        "message": f"File '{file.filename}' received. Pipeline running.",
+        "ai_provenance": ModelRegistry.get_provenance()
     }
 
 # -----------------------------
@@ -165,41 +167,32 @@ class CopilotQuery(BaseModel):
     question: str
 
 @app.post("/api/v1/copilot/ask", summary="Ask the DIRP Research Copilot")
-def ask_copilot(payload: CopilotQuery):
-    """
-    Takes a question from the UI, searches the extracted documents, 
-    and uses local Llama 3 to generate a strictly grounded historical report.
-    """
+def ask_copilot(
+    payload: CopilotQuery,
+    user: dict = Depends(require_role(["ADMIN", "RESEARCHER"]))
+):
+    log_audit_event(user["user_id"], "COPILOT_QUERY", "Llama3", {"question": payload.question})
+    
     records = load_records()
-    
     if not records:
-        raise HTTPException(status_code=404, detail="No extracted records found. Run the extraction pipeline first.")
+        raise HTTPException(status_code=404, detail="No extracted records found.")
         
-
     results = retrieve(payload.question, records)
-    
     if not results:
-        return {
-            "question": payload.question,
-            "report": "No high-confidence evidence found in the current records for this query.",
-            "evidence_used": []
-        }
+        return {"report": "No evidence found.", "evidence_used": []}
         
-    
     context, structured_evidence = build_context(results)
     
     try:
-       
         narrative = generate_report(payload.question, context)
-        
-       
         save_output(payload.question, narrative, structured_evidence)
         
         return {
             "question": payload.question,
             "report": narrative,
-            "evidence_used": structured_evidence
+            "evidence_used": structured_evidence,
+            "ai_provenance": ModelRegistry.get_provenance() 
         }
-        
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Llama 3 Generation failed: {str(e)}")
+        log_audit_event(user["user_id"], "COPILOT_ERROR", "Llama3", {"error": str(e)})
+        raise HTTPException(status_code=500, detail=f"Generation failed: {str(e)}")
