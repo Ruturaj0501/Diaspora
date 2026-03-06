@@ -1,6 +1,2002 @@
 [
-  {"text": "Chas. Dist.", "label": "PLACE", "expected": "Charleston, South Carolina"},
-  {"text": "N.O.", "label": "PLACE", "expected": "New Orleans, Louisiana"},
-  {"text": "Savh", "label": "PLACE", "expected": "Savannah, Georgia"},
-  {"text": "Delhi", "label": "PLACE", "expected": "Delhi, India"}
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "20 March 1864",
+    "label": "DATE",
+    "expected": "20 March 1864"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "10 March 1873",
+    "label": "DATE",
+    "expected": "10 March 1873"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "20 March 1852",
+    "label": "DATE",
+    "expected": "20 March 1852"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "11 March 1883",
+    "label": "DATE",
+    "expected": "11 March 1883"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "26 March 1866",
+    "label": "DATE",
+    "expected": "26 March 1866"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "24 March 1899",
+    "label": "DATE",
+    "expected": "24 March 1899"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "17 March 1879",
+    "label": "DATE",
+    "expected": "17 March 1879"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "17 March 1899",
+    "label": "DATE",
+    "expected": "17 March 1899"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "14 March 1860",
+    "label": "DATE",
+    "expected": "14 March 1860"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "21 March 1897",
+    "label": "DATE",
+    "expected": "21 March 1897"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "26 March 1851",
+    "label": "DATE",
+    "expected": "26 March 1851"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "11 March 1884",
+    "label": "DATE",
+    "expected": "11 March 1884"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "20 March 1895",
+    "label": "DATE",
+    "expected": "20 March 1895"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "23 March 1897",
+    "label": "DATE",
+    "expected": "23 March 1897"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "19 March 1892",
+    "label": "DATE",
+    "expected": "19 March 1892"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "14 March 1881",
+    "label": "DATE",
+    "expected": "14 March 1881"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "18 March 1878",
+    "label": "DATE",
+    "expected": "18 March 1878"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "25 March 1892",
+    "label": "DATE",
+    "expected": "25 March 1892"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "21 March 1870",
+    "label": "DATE",
+    "expected": "21 March 1870"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "16 March 1874",
+    "label": "DATE",
+    "expected": "16 March 1874"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "3 March 1873",
+    "label": "DATE",
+    "expected": "3 March 1873"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "11 March 1895",
+    "label": "DATE",
+    "expected": "11 March 1895"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "25 March 1877",
+    "label": "DATE",
+    "expected": "25 March 1877"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "18 March 1880",
+    "label": "DATE",
+    "expected": "18 March 1880"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "23 March 1859",
+    "label": "DATE",
+    "expected": "23 March 1859"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "17 March 1864",
+    "label": "DATE",
+    "expected": "17 March 1864"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "12 March 1871",
+    "label": "DATE",
+    "expected": "12 March 1871"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "13 March 1899",
+    "label": "DATE",
+    "expected": "13 March 1899"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "20 March 1888",
+    "label": "DATE",
+    "expected": "20 March 1888"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "11 March 1883",
+    "label": "DATE",
+    "expected": "11 March 1883"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "16 March 1863",
+    "label": "DATE",
+    "expected": "16 March 1863"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "11 March 1860",
+    "label": "DATE",
+    "expected": "11 March 1860"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "27 March 1866",
+    "label": "DATE",
+    "expected": "27 March 1866"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "7 March 1875",
+    "label": "DATE",
+    "expected": "7 March 1875"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "17 March 1900",
+    "label": "DATE",
+    "expected": "17 March 1900"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "3 March 1880",
+    "label": "DATE",
+    "expected": "3 March 1880"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "19 March 1854",
+    "label": "DATE",
+    "expected": "19 March 1854"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "14 March 1896",
+    "label": "DATE",
+    "expected": "14 March 1896"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "8 March 1861",
+    "label": "DATE",
+    "expected": "8 March 1861"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "2 March 1888",
+    "label": "DATE",
+    "expected": "2 March 1888"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "8 March 1863",
+    "label": "DATE",
+    "expected": "8 March 1863"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "17 March 1853",
+    "label": "DATE",
+    "expected": "17 March 1853"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "16 March 1881",
+    "label": "DATE",
+    "expected": "16 March 1881"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "18 March 1885",
+    "label": "DATE",
+    "expected": "18 March 1885"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "10 March 1871",
+    "label": "DATE",
+    "expected": "10 March 1871"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "28 March 1881",
+    "label": "DATE",
+    "expected": "28 March 1881"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "7 March 1860",
+    "label": "DATE",
+    "expected": "7 March 1860"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "25 March 1877",
+    "label": "DATE",
+    "expected": "25 March 1877"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "23 March 1888",
+    "label": "DATE",
+    "expected": "23 March 1888"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "19 March 1900",
+    "label": "DATE",
+    "expected": "19 March 1900"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "6 March 1893",
+    "label": "DATE",
+    "expected": "6 March 1893"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "8 March 1885",
+    "label": "DATE",
+    "expected": "8 March 1885"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "18 March 1859",
+    "label": "DATE",
+    "expected": "18 March 1859"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "1 March 1863",
+    "label": "DATE",
+    "expected": "1 March 1863"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "2 March 1872",
+    "label": "DATE",
+    "expected": "2 March 1872"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "12 March 1869",
+    "label": "DATE",
+    "expected": "12 March 1869"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "21 March 1882",
+    "label": "DATE",
+    "expected": "21 March 1882"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "6 March 1872",
+    "label": "DATE",
+    "expected": "6 March 1872"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "23 March 1900",
+    "label": "DATE",
+    "expected": "23 March 1900"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "15 March 1878",
+    "label": "DATE",
+    "expected": "15 March 1878"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "15 March 1883",
+    "label": "DATE",
+    "expected": "15 March 1883"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "8 March 1861",
+    "label": "DATE",
+    "expected": "8 March 1861"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "25 March 1858",
+    "label": "DATE",
+    "expected": "25 March 1858"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "6 March 1867",
+    "label": "DATE",
+    "expected": "6 March 1867"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "10 March 1885",
+    "label": "DATE",
+    "expected": "10 March 1885"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "22 March 1893",
+    "label": "DATE",
+    "expected": "22 March 1893"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "5 March 1855",
+    "label": "DATE",
+    "expected": "5 March 1855"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "4 March 1890",
+    "label": "DATE",
+    "expected": "4 March 1890"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "26 March 1891",
+    "label": "DATE",
+    "expected": "26 March 1891"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "26 March 1882",
+    "label": "DATE",
+    "expected": "26 March 1882"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "15 March 1853",
+    "label": "DATE",
+    "expected": "15 March 1853"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "17 March 1877",
+    "label": "DATE",
+    "expected": "17 March 1877"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "1 March 1881",
+    "label": "DATE",
+    "expected": "1 March 1881"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "24 March 1852",
+    "label": "DATE",
+    "expected": "24 March 1852"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "12 March 1874",
+    "label": "DATE",
+    "expected": "12 March 1874"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "14 March 1855",
+    "label": "DATE",
+    "expected": "14 March 1855"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "20 March 1891",
+    "label": "DATE",
+    "expected": "20 March 1891"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "20 March 1884",
+    "label": "DATE",
+    "expected": "20 March 1884"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "13 March 1861",
+    "label": "DATE",
+    "expected": "13 March 1861"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "15 March 1865",
+    "label": "DATE",
+    "expected": "15 March 1865"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "24 March 1884",
+    "label": "DATE",
+    "expected": "24 March 1884"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "1 March 1852",
+    "label": "DATE",
+    "expected": "1 March 1852"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "5 March 1868",
+    "label": "DATE",
+    "expected": "5 March 1868"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "25 March 1874",
+    "label": "DATE",
+    "expected": "25 March 1874"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "17 March 1857",
+    "label": "DATE",
+    "expected": "17 March 1857"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "24 March 1866",
+    "label": "DATE",
+    "expected": "24 March 1866"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "2 March 1880",
+    "label": "DATE",
+    "expected": "2 March 1880"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "7 March 1878",
+    "label": "DATE",
+    "expected": "7 March 1878"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "11 March 1873",
+    "label": "DATE",
+    "expected": "11 March 1873"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "19 March 1850",
+    "label": "DATE",
+    "expected": "19 March 1850"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "26 March 1856",
+    "label": "DATE",
+    "expected": "26 March 1856"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Paris",
+    "label": "PLACE",
+    "expected": "Paris"
+  },
+  {
+    "text": "5 March 1895",
+    "label": "DATE",
+    "expected": "5 March 1895"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "25 March 1860",
+    "label": "DATE",
+    "expected": "25 March 1860"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "10 March 1898",
+    "label": "DATE",
+    "expected": "10 March 1898"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "3 March 1873",
+    "label": "DATE",
+    "expected": "3 March 1873"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Boston",
+    "label": "PLACE",
+    "expected": "Boston"
+  },
+  {
+    "text": "26 March 1867",
+    "label": "DATE",
+    "expected": "26 March 1867"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "26 March 1860",
+    "label": "DATE",
+    "expected": "26 March 1860"
+  },
+  {
+    "text": "Henry Walker",
+    "label": "PERSON",
+    "expected": "Henry Walker"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "20 March 1898",
+    "label": "DATE",
+    "expected": "20 March 1898"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "William Brown",
+    "label": "PERSON",
+    "expected": "William Brown"
+  },
+  {
+    "text": "London",
+    "label": "PLACE",
+    "expected": "London"
+  },
+  {
+    "text": "24 March 1860",
+    "label": "DATE",
+    "expected": "24 March 1860"
+  },
+  {
+    "text": "Samuel Adams",
+    "label": "PERSON",
+    "expected": "Samuel Adams"
+  },
+  {
+    "text": "John Smith",
+    "label": "PERSON",
+    "expected": "John Smith"
+  },
+  {
+    "text": "Delhi",
+    "label": "PLACE",
+    "expected": "Delhi"
+  },
+  {
+    "text": "28 March 1896",
+    "label": "DATE",
+    "expected": "28 March 1896"
+  }
 ]
