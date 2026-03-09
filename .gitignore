@@ -1,1 +1,46 @@
+# =========================
+# 1. SECRETS & CREDENTIALS (CRITICAL)
+# =========================
 .env
+.env.*
+*.pem
+*.key
+
+# =========================
+# 2. LOCAL DATABASES & LOGS
+# =========================
+*.db
+*.sqlite3
+dirp_hybrid_vault.db
+audit_trail.log
+*.log
+
+# =========================
+# 3. DYNAMIC PROJECT DATA
+# =========================
+# Ignore user uploaded images/documents
+uploads/
+
+# Ignore AI-generated reports so they don't bloat the commit history
+Phase2/phase2_output.json
+Phase5/output_report.json
+Phase5/researcher_feedback.json
+
+# =========================
+# 4. PYTHON ENVIRONMENTS
+# =========================
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# =========================
+# 5. IDE & OS FILES
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
