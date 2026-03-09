@@ -18,7 +18,7 @@ uvicorn
 neo4j
 mistralai
 python-multipart
-langchain-ollama
 psycopg2-binary
 groq
+
 
