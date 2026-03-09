@@ -45,10 +45,26 @@ def health_check():
     }
 
 # ==========================================
-# DATABASE & RANKER INITIALIZATION
+# LAZY LOADERS (Fixes Render Port Timeout)
 # ==========================================
-db = HybridDatabaseManager()
-ranker = HybridCandidateRanker(review_threshold=0.70)
+# We initialize these as None so Uvicorn can open the port instantly.
+# They will only load the heavy AI models when the first request hits.
+db_instance = None
+ranker_instance = None
+
+def get_db():
+    global db_instance
+    if db_instance is None:
+        print("Initializing Database connection...")
+        db_instance = HybridDatabaseManager()
+    return db_instance
+
+def get_ranker():
+    global ranker_instance
+    if ranker_instance is None:
+        print("Downloading Heavy AI Models...")
+        ranker_instance = HybridCandidateRanker(review_threshold=0.70)
+    return ranker_instance
 
 # -----------------------------
 # 1. DATA INGESTION (ADMIN ONLY)
@@ -58,7 +74,7 @@ def ingest_nodes(
     nodes: List[GraphNode],
     user: dict = Depends(require_role(["ADMIN"])) # Strict RBAC
 ):
-    # Audit Log the action
+    db = get_db()
     log_audit_event(user["user_id"], "INGEST_NODES", "HybridDatabase", {"count": len(nodes)})
     
     for node in nodes:
@@ -70,6 +86,7 @@ def ingest_nodes(
 # 2. THE AI RESOLUTION ENGINE (ADMIN ONLY)
 # -----------------------------
 def get_node_embedding(node_id: str) -> list:
+    db = get_db()
     cursor = db.sqlite_conn.cursor()
     cursor.execute("SELECT embedding FROM evidence_vault WHERE node_id = ?", (node_id,))
     row = cursor.fetchone()
@@ -77,6 +94,8 @@ def get_node_embedding(node_id: str) -> list:
 
 @app.post("/api/v1/graph/resolve", summary="Run Neo4j Blocking & ML Ranking")
 def run_resolution(user: dict = Depends(require_role(["ADMIN"]))):
+    db = get_db()
+    ranker = get_ranker()
     log_audit_event(user["user_id"], "RUN_RESOLUTION", "Neo4j/SQLite")
     
     new_edges_count = 0
@@ -111,6 +130,7 @@ def run_resolution(user: dict = Depends(require_role(["ADMIN"]))):
 # -----------------------------
 @app.get("/api/v1/review/queue", summary="Fetch UI Queue (Joined Data)")
 def get_review_queue(user: dict = Depends(require_role(["ADMIN", "RESEARCHER"]))):
+    db = get_db()
     log_audit_event(user["user_id"], "FETCH_REVIEW_QUEUE", "Neo4j")
     queue = []
     
@@ -151,6 +171,7 @@ def submit_decision(
     payload: ReviewDecision,
     user: dict = Depends(require_role(["ADMIN", "RESEARCHER"]))
 ):
+    db = get_db()
     if payload.decision.upper() not in ["APPROVE", "REJECT"]:
         raise HTTPException(status_code=400, detail="Must be APPROVE or REJECT.")
         
