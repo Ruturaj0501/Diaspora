@@ -20,7 +20,6 @@ app = FastAPI(title="DIRP Hybrid Graph API (Secured)", version="1.0")
 # ==========================================
 # 0. CORS & DEPLOYMENT CONFIGURATION
 # ==========================================
-
 origins = [
     "http://localhost:3000",
     "https://diaspora-one.vercel.app", 
@@ -228,4 +227,3 @@ def ask_copilot(
     except Exception as e:
         log_audit_event(user["user_id"], "COPILOT_ERROR", "Llama3", {"error": str(e)})
         raise HTTPException(status_code=500, detail=f"Generation failed: {str(e)}")
-
