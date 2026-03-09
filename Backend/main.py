@@ -2,6 +2,7 @@ import os
 import shutil
 import json
 from fastapi import FastAPI, HTTPException, UploadFile, File, BackgroundTasks, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict
 
@@ -16,6 +17,36 @@ from Phase6.governance import require_role, log_audit_event, ModelRegistry, chec
 
 app = FastAPI(title="DIRP Hybrid Graph API (Secured)", version="1.0")
 
+# ==========================================
+# 0. CORS & DEPLOYMENT CONFIGURATION
+# ==========================================
+
+origins = [
+    "http://localhost:3000",
+    "https://diaspora-one.vercel.app",  
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins, 
+    allow_credentials=True,
+    allow_methods=["*"], 
+    allow_headers=["*"], 
+)
+
+@app.get("/")
+def health_check():
+    """
+    Render looks for this exact endpoint to verify the server is alive.
+    """
+    return {
+        "status": "online", 
+        "message": "Diaspora API is running.",
+        "active_models": ModelRegistry.get_provenance()
+    }
+
+# ==========================================
+# DATABASE & RANKER INITIALIZATION
+# ==========================================
 db = HybridDatabaseManager()
 ranker = HybridCandidateRanker(review_threshold=0.70)
 
