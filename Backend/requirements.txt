@@ -1,5 +1,4 @@
 pandas 
-tensorflow
 matplotlib
 seaborn
 opencv-python
@@ -22,3 +21,4 @@ python-multipart
 langchain-ollama
 psycopg2-binary
 groq
+
