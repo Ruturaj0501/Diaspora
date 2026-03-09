@@ -3,12 +3,9 @@ tensorflow
 matplotlib
 seaborn
 opencv-python
-easyocr
 transformers
 pydantic
-google-genai
 python-dotenv
-google-generativeai
 jellyfish 
 rapidfuzz 
 dateparser
@@ -20,3 +17,8 @@ sentence-transformers
 fastapi
 uvicorn
 neo4j
+mistralai
+python-multipart
+langchain-ollama
+psycopg2-binary
+groq
