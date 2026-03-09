@@ -1,0 +1,16 @@
+{
+  "places": {
+    "Paris": [
+      "Paris"
+    ],
+    "Boston": [
+      "Boston"
+    ],
+    "London": [
+      "London"
+    ],
+    "Delhi": [
+      "Delhi"
+    ]
+  }
+}

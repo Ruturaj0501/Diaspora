@@ -1,0 +1,247 @@
+{
+    "DocumentText": "Inventory of Slaves Stock &c on the Estate of the\nLate Col. Richard Barnes in Washington County on the 15th May 1804\nRs Names age Names age Rs\nDead \" Wilson . . . . 1 . . . . 78 \" Peter . . . . 45 . . 10\n\" Ben . . . . . . 2 . . . . 67 \" Jack . . . . 46 . 9\n\" Ned . . . . . . 3 . . . . 66 \" Jack (of J) 47 8\n\" Gilley . . . . . 4 . . . . 59 \" Dick . . . . 48 . 8\n\" Billy (Carpenter) 5 58 \" Isaac . . . . 49 . 8\n\" Peter (Smith) 6 . 50 \" Ben . . . . . 50 . 8 Papers\n\" Charles . . . . 7 . 47 \" Rial . . . . . 51 . 8 Papers\n\" Douglas . . . . 8 . 45 \" Jack . . . . . 52 . 8 Papers",
+    "LayoutBlocks": [
+        {
+            "text": "Inventory of Slaves Stock &c on the Estate of the",
+            "coordinates": [
+                [
+                    139,
+                    25
+                ],
+                [
+                    1982,
+                    25
+                ],
+                [
+                    1982,
+                    255
+                ],
+                [
+                    139,
+                    255
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "Late Col. Richard Barnes in Washington County on the 15th May 1804",
+            "coordinates": [
+                [
+                    98,
+                    204
+                ],
+                [
+                    2017,
+                    204
+                ],
+                [
+                    2017,
+                    387
+                ],
+                [
+                    98,
+                    387
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "Rs Names age Names age Rs",
+            "coordinates": [
+                [
+                    122,
+                    398
+                ],
+                [
+                    1802,
+                    398
+                ],
+                [
+                    1802,
+                    490
+                ],
+                [
+                    122,
+                    490
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "Dead \" Wilson . . . . 1 . . . . 78 \" Peter . . . . 45 . . 10",
+            "coordinates": [
+                [
+                    102,
+                    479
+                ],
+                [
+                    1556,
+                    479
+                ],
+                [
+                    1556,
+                    571
+                ],
+                [
+                    102,
+                    571
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "\" Ben . . . . . . 2 . . . . 67 \" Jack . . . . 46 . 9",
+            "coordinates": [
+                [
+                    348,
+                    561
+                ],
+                [
+                    1556,
+                    561
+                ],
+                [
+                    1556,
+                    643
+                ],
+                [
+                    348,
+                    643
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "\" Ned . . . . . . 3 . . . . 66 \" Jack (of J) 47 8",
+            "coordinates": [
+                [
+                    348,
+                    633
+                ],
+                [
+                    1556,
+                    633
+                ],
+                [
+                    1556,
+                    714
+                ],
+                [
+                    348,
+                    714
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "\" Gilley . . . . . 4 . . . . 59 \" Dick . . . . 48 . 8",
+            "coordinates": [
+                [
+                    348,
+                    694
+                ],
+                [
+                    1556,
+                    694
+                ],
+                [
+                    1556,
+                    775
+                ],
+                [
+                    348,
+                    775
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "\" Billy (Carpenter) 5 58 \" Isaac . . . . 49 . 8",
+            "coordinates": [
+                [
+                    348,
+                    755
+                ],
+                [
+                    1556,
+                    755
+                ],
+                [
+                    1556,
+                    837
+                ],
+                [
+                    348,
+                    837
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "\" Peter (Smith) 6 . 50 \" Ben . . . . . 50 . 8 Papers",
+            "coordinates": [
+                [
+                    348,
+                    816
+                ],
+                [
+                    1781,
+                    816
+                ],
+                [
+                    1781,
+                    898
+                ],
+                [
+                    348,
+                    898
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "\" Charles . . . . 7 . 47 \" Rial . . . . . 51 . 8 Papers",
+            "coordinates": [
+                [
+                    348,
+                    888
+                ],
+                [
+                    1781,
+                    888
+                ],
+                [
+                    1781,
+                    969
+                ],
+                [
+                    348,
+                    969
+                ]
+            ],
+            "confidence": "N/A"
+        },
+        {
+            "text": "\" Douglas . . . . 8 . 45 \" Jack . . . . . 52 . 8 Papers",
+            "coordinates": [
+                [
+                    348,
+                    959
+                ],
+                [
+                    1781,
+                    959
+                ],
+                [
+                    1781,
+                    1021
+                ],
+                [
+                    348,
+                    1021
+                ]
+            ],
+            "confidence": "N/A"
+        }
+    ]
+}

@@ -1,0 +1,4102 @@
+[
+    {
+        "text": "John Smith sold cotton to Henry Walker in Paris on 20 March 1864 for 255 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "20 March 1864",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold horse to John Smith in London on 10 March 1873 for 294 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "10 March 1873",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold wagon to Samuel Adams in Delhi on 20 March 1852 for 381 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "20 March 1852",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold wagon to Henry Walker in Delhi on 11 March 1883 for 345 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "11 March 1883",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to John Smith in Paris on 26 March 1866 for 153 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "26 March 1866",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold land to Samuel Adams in Paris on 24 March 1899 for 263 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "24 March 1899",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold land to Samuel Adams in Delhi on 17 March 1879 for 487 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "17 March 1879",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to John Smith in London on 17 March 1899 for 95 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "17 March 1899",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold wagon to William Brown in Delhi on 14 March 1860 for 340 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "14 March 1860",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to John Smith in London on 21 March 1897 for 71 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "21 March 1897",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to William Brown in London on 26 March 1851 for 229 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "26 March 1851",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to John Smith in Delhi on 11 March 1884 for 473 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "11 March 1884",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to Henry Walker in London on 20 March 1895 for 177 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "20 March 1895",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold land to Henry Walker in London on 23 March 1897 for 340 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "23 March 1897",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold horse to John Smith in Delhi on 19 March 1892 for 453 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "19 March 1892",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold land to Henry Walker in Delhi on 14 March 1881 for 474 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "14 March 1881",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to William Brown in Paris on 18 March 1878 for 471 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    41
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    45,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "18 March 1878",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold horse to John Smith in Boston on 25 March 1892 for 74 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "25 March 1892",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold horse to Samuel Adams in Boston on 21 March 1870 for 488 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "21 March 1870",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold land to John Smith in London on 16 March 1874 for 145 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    36
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    40,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "16 March 1874",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to John Smith in London on 3 March 1873 for 184 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "3 March 1873",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold wagon to Samuel Adams in London on 11 March 1895 for 292 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "11 March 1895",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold cotton to Henry Walker in Paris on 25 March 1877 for 460 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    29,
+                    41
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    45,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "25 March 1877",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold horse to John Smith in London on 18 March 1880 for 375 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "18 March 1880",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to Henry Walker in London on 23 March 1859 for 169 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "23 March 1859",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold horse to William Brown in Delhi on 17 March 1864 for 279 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "17 March 1864",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold wagon to John Smith in Paris on 12 March 1871 for 111 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "12 March 1871",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold land to William Brown in London on 13 March 1899 for 87 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "13 March 1899",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to William Brown in London on 20 March 1888 for 345 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "20 March 1888",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold land to John Smith in London on 11 March 1883 for 332 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "11 March 1883",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold horse to John Smith in London on 16 March 1863 for 312 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "16 March 1863",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold cotton to John Smith in Delhi on 11 March 1860 for 156 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "11 March 1860",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to William Brown in Paris on 27 March 1866 for 175 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "27 March 1866",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to Henry Walker in Delhi on 7 March 1875 for 209 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "7 March 1875",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to William Brown in Delhi on 17 March 1900 for 413 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "17 March 1900",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to John Smith in Paris on 3 March 1880 for 456 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "3 March 1880",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    62
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to William Brown in London on 19 March 1854 for 160 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "19 March 1854",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to Henry Walker in London on 14 March 1896 for 270 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "14 March 1896",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold cotton to William Brown in London on 8 March 1861 for 356 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    41
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    45,
+                    51
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "8 March 1861",
+                "label": "DATE",
+                "evidence_pointer": [
+                    55,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to William Brown in Paris on 2 March 1888 for 82 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "2 March 1888",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold horse to Samuel Adams in Paris on 8 March 1863 for 468 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "8 March 1863",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    62
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold cotton to Samuel Adams in Boston on 17 March 1853 for 246 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "17 March 1853",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold wagon to Henry Walker in Boston on 16 March 1881 for 61 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "16 March 1881",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold wagon to William Brown in London on 18 March 1885 for 444 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "18 March 1885",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold wagon to Samuel Adams in Boston on 10 March 1871 for 452 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "10 March 1871",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to William Brown in Paris on 28 March 1881 for 500 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    41
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    45,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "28 March 1881",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold land to John Smith in Delhi on 7 March 1860 for 498 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    36
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    40,
+                    45
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "7 March 1860",
+                "label": "DATE",
+                "evidence_pointer": [
+                    49,
+                    61
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold wagon to Henry Walker in Boston on 25 March 1877 for 386 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "25 March 1877",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold land to William Brown in Boston on 23 March 1888 for 378 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "23 March 1888",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold cotton to Henry Walker in London on 19 March 1900 for 124 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    29,
+                    41
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    45,
+                    51
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "19 March 1900",
+                "label": "DATE",
+                "evidence_pointer": [
+                    55,
+                    68
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold land to Henry Walker in Boston on 6 March 1893 for 496 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    24,
+                    36
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    40,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "6 March 1893",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    62
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold cotton to John Smith in Paris on 8 March 1885 for 344 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "8 March 1885",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold land to William Brown in Boston on 18 March 1859 for 103 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    24,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "18 March 1859",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold wagon to Henry Walker in Boston on 1 March 1863 for 429 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "1 March 1863",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold land to William Brown in Boston on 2 March 1872 for 342 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "2 March 1872",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold land to Samuel Adams in Boston on 12 March 1869 for 96 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    24,
+                    36
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    40,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "12 March 1869",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold land to William Brown in London on 21 March 1882 for 446 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "21 March 1882",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to William Brown in Paris on 6 March 1872 for 220 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "6 March 1872",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to Henry Walker in Paris on 23 March 1900 for 179 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "23 March 1900",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold horse to Samuel Adams in Delhi on 15 March 1878 for 393 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "15 March 1878",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold horse to Henry Walker in Paris on 15 March 1883 for 395 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "15 March 1883",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold cotton to Henry Walker in London on 8 March 1861 for 345 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    29,
+                    41
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    45,
+                    51
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "8 March 1861",
+                "label": "DATE",
+                "evidence_pointer": [
+                    55,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to William Brown in London on 25 March 1858 for 188 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "25 March 1858",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold horse to Henry Walker in London on 6 March 1867 for 286 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "6 March 1867",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to William Brown in London on 10 March 1885 for 56 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "10 March 1885",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to John Smith in Boston on 22 March 1893 for 495 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "22 March 1893",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold horse to Henry Walker in Delhi on 5 March 1855 for 107 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "5 March 1855",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to Henry Walker in Paris on 4 March 1890 for 413 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "4 March 1890",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to Henry Walker in Delhi on 26 March 1891 for 123 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "26 March 1891",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold wagon to Henry Walker in Boston on 26 March 1882 for 426 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "26 March 1882",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to William Brown in Paris on 15 March 1853 for 400 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "15 March 1853",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to Henry Walker in London on 17 March 1877 for 296 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "17 March 1877",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold wagon to Henry Walker in Delhi on 1 March 1881 for 425 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "1 March 1881",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    62
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to William Brown in Paris on 24 March 1852 for 203 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "24 March 1852",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold horse to William Brown in London on 12 March 1874 for 68 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "12 March 1874",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold wagon to John Smith in London on 14 March 1855 for 208 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "14 March 1855",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to William Brown in Paris on 20 March 1891 for 462 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "20 March 1891",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold wagon to Henry Walker in Boston on 20 March 1884 for 184 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "20 March 1884",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to Henry Walker in Boston on 13 March 1861 for 493 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "13 March 1861",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold wagon to William Brown in Delhi on 15 March 1865 for 56 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "15 March 1865",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold horse to Henry Walker in Paris on 24 March 1884 for 469 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "24 March 1884",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold horse to John Smith in Delhi on 1 March 1852 for 205 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "1 March 1852",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    62
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold horse to Henry Walker in Delhi on 5 March 1868 for 372 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "5 March 1868",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to William Brown in Delhi on 25 March 1874 for 219 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "25 March 1874",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold land to William Brown in London on 17 March 1857 for 84 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    24,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "17 March 1857",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to John Smith in Delhi on 24 March 1866 for 308 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "24 March 1866",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold horse to William Brown in London on 2 March 1880 for 120 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "2 March 1880",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold cotton to Henry Walker in Paris on 7 March 1878 for 214 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "7 March 1878",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold land to William Brown in Paris on 11 March 1873 for 254 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "11 March 1873",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold horse to John Smith in London on 19 March 1850 for 411 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "19 March 1850",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold wagon to William Brown in London on 26 March 1856 for 275 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "26 March 1856",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold cotton to William Brown in Paris on 5 March 1895 for 238 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    41
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Paris",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    45,
+                    50
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "5 March 1895",
+                "label": "DATE",
+                "evidence_pointer": [
+                    54,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold wagon to William Brown in Delhi on 25 March 1860 for 456 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    27,
+                    40
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    44,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "25 March 1860",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold wagon to Samuel Adams in Boston on 10 March 1898 for 428 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    47
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "10 March 1898",
+                "label": "DATE",
+                "evidence_pointer": [
+                    51,
+                    64
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold cotton to Samuel Adams in Boston on 3 March 1873 for 230 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    29,
+                    41
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    45,
+                    51
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "3 March 1873",
+                "label": "DATE",
+                "evidence_pointer": [
+                    55,
+                    67
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "William Brown sold horse to John Smith in Boston on 26 March 1867 for 103 dollars",
+        "entities": [
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    13
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    28,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Boston",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "26 March 1867",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "John Smith sold horse to Samuel Adams in Delhi on 26 March 1860 for 376 dollars",
+        "entities": [
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    10
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    25,
+                    37
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    41,
+                    46
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "26 March 1860",
+                "label": "DATE",
+                "evidence_pointer": [
+                    50,
+                    63
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Henry Walker sold land to Samuel Adams in London on 20 March 1898 for 480 dollars",
+        "entities": [
+            {
+                "entity": "Henry Walker",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    38
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    42,
+                    48
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "20 March 1898",
+                "label": "DATE",
+                "evidence_pointer": [
+                    52,
+                    65
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold land to William Brown in London on 24 March 1860 for 436 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "William Brown",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    39
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "London",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    43,
+                    49
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "24 March 1860",
+                "label": "DATE",
+                "evidence_pointer": [
+                    53,
+                    66
+                ],
+                "confidence": 1.0
+            }
+        ]
+    },
+    {
+        "text": "Samuel Adams sold land to John Smith in Delhi on 28 March 1896 for 397 dollars",
+        "entities": [
+            {
+                "entity": "Samuel Adams",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    0,
+                    12
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "John Smith",
+                "label": "PERSON",
+                "evidence_pointer": [
+                    26,
+                    36
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "Delhi",
+                "label": "PLACE",
+                "evidence_pointer": [
+                    40,
+                    45
+                ],
+                "confidence": 1.0
+            },
+            {
+                "entity": "28 March 1896",
+                "label": "DATE",
+                "evidence_pointer": [
+                    49,
+                    62
+                ],
+                "confidence": 1.0
+            }
+        ]
+    }
+]

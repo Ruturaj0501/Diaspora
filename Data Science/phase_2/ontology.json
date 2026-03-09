@@ -1,0 +1,21 @@
+{
+    "entities": [
+        "PERSON",
+        "PLACE",
+        "DATE"
+    ],
+    "events": [
+        "SALE",
+        "TRANSFER"
+    ],
+    "required_fields": {
+        "SALE": [
+            "seller",
+            "buyer",
+            "item",
+            "price",
+            "location",
+            "date"
+        ]
+    }
+}

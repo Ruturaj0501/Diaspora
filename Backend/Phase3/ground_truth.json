@@ -1,0 +1,6 @@
+[
+  {"text": "Chas. Dist.", "label": "PLACE", "expected": "Charleston, South Carolina"},
+  {"text": "N.O.", "label": "PLACE", "expected": "New Orleans, Louisiana"},
+  {"text": "Savh", "label": "PLACE", "expected": "Savannah, Georgia"},
+  {"text": "Delhi", "label": "PLACE", "expected": "Delhi, India"}
+]
