@@ -8,7 +8,8 @@ from Phase1.document import extract_and_save_data
 from Phase2.entity_extraction import main as run_phase2
 from Phase3.normalize import main as run_phase3
 
-BASE_URL = "http://127.0.0.1:8000/api/v1"
+
+BASE_URL = "https://diaspora-snh1.onrender.com/api/v1"
 
 def process_document_end_to_end(image_path: str):
     print("\n" + "="*50)
@@ -92,4 +93,5 @@ def process_document_end_to_end(image_path: str):
 
 if __name__ == "__main__":
     target_image = "C:\\Users\\Ruturaj\\Downloads\\Try2.jpg"
+
     process_document_end_to_end(target_image)
