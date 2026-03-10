@@ -56,7 +56,7 @@ class ModelRegistry:
         }
 
 # ==========================================
-# 3. ROLE-BASED ACCESS CONTROL (NEON DB DB)
+# 3. ROLE-BASED ACCESS CONTROL (TEMPORARILY BYPASSED)
 # ==========================================
 security_scheme = HTTPBearer()
 
@@ -67,7 +67,7 @@ def get_current_user(credentials: HTTPAuthorizationCredentials = Security(securi
     try:
         with get_db_connection() as conn:
             with conn.cursor(cursor_factory=RealDictCursor) as cursor:
-               
+                
                 cursor.execute("""
                     SELECT user_id, role FROM api_users WHERE token = %s AND is_active = TRUE
                 """, (token,))
@@ -76,7 +76,6 @@ def get_current_user(credentials: HTTPAuthorizationCredentials = Security(securi
         print(f"[ERROR] Database authentication failed: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error during authentication.")
     
-    
     if not user:
         log_audit_event("UNKNOWN_USER", "FAILED_LOGIN_ATTEMPT", "API")
         raise HTTPException(status_code=401, detail="Invalid, missing, or revoked authentication token.")
@@ -84,12 +83,17 @@ def get_current_user(credentials: HTTPAuthorizationCredentials = Security(securi
     return user
 
 def require_role(allowed_roles: list[str]):
-    """FastAPI Dependency to lock down endpoints by database role."""
-    def role_checker(user: dict = Depends(get_current_user)):
-        if user["role"] not in allowed_roles:
-            log_audit_event(user["user_id"], "UNAUTHORIZED_ACCESS_ATTEMPT", f"Required: {allowed_roles}")
-            raise HTTPException(status_code=403, detail="Permission denied.")
-        return user
+    """
+    TEMPORARY AUTH BYPASS:
+    Automatically approves all requests and returns a dummy admin user.
+    """
+    def role_checker():
+        # We removed the `Depends(get_current_user)` to skip the token check.
+        # This dummy data keeps your audit logs from crashing!
+        return {
+            "user_id": "temp_admin_tester",
+            "role": "ADMIN"
+        }
     return role_checker
 
 # ==========================================
