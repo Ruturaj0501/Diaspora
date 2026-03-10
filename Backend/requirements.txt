@@ -12,7 +12,6 @@ langchain
 langchain-huggingface
 langchain-community
 langchain-core
-sentence-transformers
 fastapi
 uvicorn
 neo4j
@@ -20,5 +19,6 @@ mistralai
 python-multipart
 psycopg2-binary
 groq
+
 
 
