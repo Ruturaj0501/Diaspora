@@ -4,19 +4,17 @@ import os
 import jellyfish
 import dateparser
 from rapidfuzz import process, fuzz
-from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
+
+# 1. REMOVED HEAVY EMBEDDINGS IMPORT
+# from langchain_huggingface import HuggingFaceEmbeddings
 
 load_dotenv() 
 
-print("[INFO] Loading LangChain Hugging Face embeddings...")
+print("[INFO] Bypassing heavy local embeddings for Render deployment...")
 
-if not os.getenv('HF_TOKEN'):
-    print("[WARNING] HF_TOKEN environment variable not found. Some models may require it.")
-
-os.environ['HF_TOKEN'] = os.getenv('HF_TOKEN', '')
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-
+# 2. DISABLED LOCAL MODEL INITIALIZATION
+# embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 def load_name_variants(filepath="Phase3/name_variants.json"):
     """Loads name abbreviations from an external JSON file."""
@@ -27,7 +25,6 @@ def load_name_variants(filepath="Phase3/name_variants.json"):
     except FileNotFoundError:
         print(f"[ERROR] '{filepath}' not found. Name variants will not be resolved.")
         return {}
-
 
 def load_place_aliases(filepath="Phase3/alias_corpus.json"):
     """Loads place aliases and flattens them for fuzzy matching."""
@@ -49,9 +46,8 @@ def load_place_aliases(filepath="Phase3/alias_corpus.json"):
 NAME_VARIANTS = load_name_variants()
 FLAT_ALIASES = load_place_aliases()
 
-
 def normalize_name(name_str):
-    """Goal 1: Name Normalization API (Variant + Phonetic + LangChain Embedding)"""
+    """Goal 1: Name Normalization API (Variant + Phonetic + Dummy Embedding)"""
     clean_name = name_str.lower().strip()
     
     words = clean_name.split()
@@ -59,7 +55,10 @@ def normalize_name(name_str):
     standardized_name = " ".join(standardized_words)
     
     phonetic_key = jellyfish.metaphone(standardized_name)
-    embedding_vector = embeddings.embed_query(standardized_name)
+    
+    # 3. USE DUMMY EMBEDDING ARRAY (384 dimensions to match all-MiniLM-L6-v2)
+    # This prevents Neo4j or SQLite from crashing when they expect an array!
+    embedding_vector = [0.0] * 384 
     
     return {
         "standardized_name": standardized_name.title(),
@@ -96,11 +95,9 @@ def normalize_date(date_str):
     
     return f"UNRESOLVED: {date_str}"
 
-
 def main():
     print("[INFO] Loading Phase 2 extracted data...")
     try:
-       
         with open("Phase2/phase2_output.json", "r", encoding="utf-8") as f:
             data = json.load(f)
     except FileNotFoundError:
