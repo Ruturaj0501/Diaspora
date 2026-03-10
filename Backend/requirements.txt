@@ -9,7 +9,6 @@ jellyfish
 rapidfuzz 
 dateparser
 langchain
-langchain-huggingface
 langchain-community
 langchain-core
 fastapi
@@ -19,6 +18,7 @@ mistralai
 python-multipart
 psycopg2-binary
 groq
+
 
 
 
