@@ -23,7 +23,7 @@ export default function UploadSection() {
         formData.append('file', file);
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/v1/pipeline/upload', {
+            const response = await fetch('https://diaspora-snh1.onrender.com/api/v1/pipeline/upload', {
                 method: 'POST',
                 body: formData,
             });
